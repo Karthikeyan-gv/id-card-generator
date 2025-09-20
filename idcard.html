@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id Card Gen.k</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="disclaimer">
+        <span><span id="warning">       WARNING!!!</span>The generated ID card is unofficial (only for learning, project purpose) and <span id="warning">WARNING!!!</span> should not be used for any malicious or unauthorized purpose.        If you need an official ID card, <span id="warning">WARNING!!!</span> obtain it from college management.</span>
+    </div>
+    <card id="card">
+        <img id="bgimg" src="20250831_183937.jpg" alt="">
+        <div id="front">
+            <img id="stuimg" src="Picsart_25-08-19_22-13-02-579.png" alt="student image">
+            <div id="frontcontent">
+                <h3 id="fname" >Name :</h3>
+                <h3 id="fdept">Dept :</h3>
+                <h3 id="frollno">Roll no :</h3>
+                <h3 id="fbatch">Batch :</h3>
+            </div>
+            <h3 id="fd"> </h3>
+            <h3 id="fh"> </h3>
+        </div>
+            <br>
+        <img id="bgimg" src="20250919_220923.jpg" alt="">
+        <div id="back">
+            <div id="backcontent">
+                <h3 id="bdob" >Date of Birth: </h3>
+                <h3 id="bblood">Blood Group : </h3>
+                <h3 id="badd">Address : </h3>
+                <h3 id="phno1">Mobile No : </h3>
+                <h3 id="phno2">Mobile No : </h3>
+            </div>
+            <h3 id="brollno"></h3>
+        </div>        
+    </card>
+    <footer id="about">
+            <p>Designed by <a href="http://www.linkedin.com/in/karthikeyangv';"><strong>Karthikeyan</strong></a></p>
+            <img onclick="window.location.href='http://www.linkedin.com/in/karthikeyangv';" src="" alt="LinkedIn">
+            <img onclick="window.location.href='https://github.com/Karthikeyan-gv';" src="" alt="Github">
+            <p>@ Please, Consider this as a simple project and not intended to harm your institution.</p>
+    </footer>
+
+    <script >
+
+    setTimeout(()=>{
+        alert("DON'T MISUSE WITH THIS ID CARD!")
+    },2000);
+
+        document.addEventListener("DOMContentLoaded",()=>{
+            console.log("ID CARD GENERATED!");
+            // front
+            document.getElementById("fname").innerHTML=`Name : ${localStorage.getItem("name")}`
+            document.getElementById("frollno").innerHTML=`Rollno : ${localStorage.getItem("rollno")}`
+            document.getElementById("fbatch").innerHTML=`Batch : ${localStorage.getItem("batch")}`
+            document.getElementById("fdept").innerHTML=`Dept : ${localStorage.getItem("dept")}`
+            document.getElementById("stuimg").src=localStorage.getItem("img")
+            let ls=localStorage.getItem("d")
+            if (ls=="D") {
+                document.getElementById("fd").innerHTML=`D`
+                
+            } else {
+                document.getElementById("fh").innerHTML=`H`
+                
+            }
+
+            // back
+            document.getElementById("bdob").innerHTML+=`${localStorage.getItem("dob")}`
+            document.getElementById("bblood").innerHTML+=`${localStorage.getItem("blood")}`
+            document.getElementById("badd").innerHTML+=`${localStorage.getItem("address")}`
+            document.getElementById("phno1").innerHTML+=`${localStorage.getItem("phno1")}`
+            document.getElementById("phno2").innerHTML+=`${localStorage.getItem("phno2")}`
+            document.getElementById("brollno").innerHTML+=`${localStorage.getItem("rollno")}`
+            
+        })
+    </script>
+</body>
+</html>

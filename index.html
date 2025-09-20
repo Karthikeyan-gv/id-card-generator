@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id Card Gen.k</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>ID CARD GENERATOR</h1>
+    </header>
+    <content>
+        <form action="" method="get">
+            <label  for="name">Name:</label>
+            <br>
+            <input id="name" name="name" type="text"  >
+            <br>
+            <label for="">Roll Number:</label>
+            <br>
+            <input id="rollno" type="text" >
+            <br>
+            <label for="">Department:</label>
+            <br>
+            <input id="dept" type="text" >
+            <br>
+            <label for="">Batch:</label>
+            <br>
+            <input id="batch" type="text" >
+            <br>
+            <label for="">Dayscholor/Hostel:</label>
+            <br>
+            <input id="d" type="radio" name="radio" value="D" >D
+            <br>
+            <input id="h" type="radio" name="radio" value="H" >H
+            <br>
+
+            <label for="">Date Of Birth:</label>
+            <br>
+            <input  id="dob" type="date" >
+            <br>
+            <label for="">Blood Group:</label>
+            <br>
+            <input id="blood" type="text" >
+            <br>
+            <label for="">Address:</label>
+            <br>
+            <input id="address" type="comment" >
+            <br>
+            <label for="">Mobile Number1:</label>
+            <br>
+            <input id="phno1" type="number" >
+            <br>
+            <label for="">Mobile Number2:</label>
+            <br>
+            <input id="phno2" type="number" >
+            <br>
+            <label for="">Image:</label>
+            <br>
+            <input id="img" type="file" accept="image/*" >
+            <br>
+        </form>
+
+        <center><a href="idcard.html"><button  id="generate" type="submit" onclick="generate()">GENERATE</button></a></center>
+
+    </content>
+
+    <script src="script.js"></script> 
+</body>
+</html>
