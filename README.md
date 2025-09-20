@@ -1,5 +1,5 @@
 ﻿# id-card-generator
-Link:https://karthikeyan-gv.github.io/id-card-generator/idcard.html
+Link:https://karthikeyan-gv.github.io/id-card-generator/index.html
 echo "# id-card-generator" >> README.md
 git init
 git add README.md
@@ -12,3 +12,4 @@ git remote add origin https://github.com/Karthikeyan-gv/id-card-generator.git
 git branch -M main
 
 git push -u origin main
+
