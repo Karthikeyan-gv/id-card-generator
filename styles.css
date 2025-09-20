@@ -6,7 +6,7 @@ body{
     padding: 0px;
     font-weight: 500;
     font-family: 'Outfit', sans-serif;
-    color: var(--dark);
+    //color: var(--dark);
 }
 header{
     background-color: #007bff;
