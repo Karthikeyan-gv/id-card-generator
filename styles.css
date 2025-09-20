@@ -6,10 +6,8 @@ body{
     padding: 0px;
     font-weight: 500;
     font-family: 'Outfit', sans-serif;
-<<<<<<< HEAD
-=======
     color: black;
->>>>>>> 3d420c0627b59a1aec2cdab97b38fd9d24f98fd7
+    filter: invert(1);
 }
 header{
     background-color: #007bff;
@@ -167,7 +165,7 @@ input:hover{
     color: #000000;
     font-size: 9px;
     text-align: start;
-
+    
 }
 #brollno{
     position: absolute;
