@@ -48,9 +48,9 @@ function generate(params) {
 
 }
 
-// function clearstorage(params) {
-//     setTimeout(()=>{
-//         localStorage.clear();
-//     },600000)
-// }
-// clearstorage()
+function clearstorage(params) {
+    setTimeout(()=>{
+        localStorage.clear();
+    },60000)
+}
+clearstorage()
