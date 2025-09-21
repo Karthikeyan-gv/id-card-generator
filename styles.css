@@ -1,6 +1,6 @@
 /* index.html */
 
-body{
+/* body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
     padding: 0px;
@@ -8,7 +8,62 @@ body{
     font-family: 'Outfit', sans-serif;
     color: white;
     background-color: #000000;
+} */
+
+/* Import a clean, readable modern font (optional but recommended) */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap');
+
+body {
+    /* Reset margin and padding */
+    margin: 0;
+    padding: 0;
+
+    /* Font settings */
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 16px;
+
+    /* Basic layout */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    /* Color scheme defaults */
+    background-color: #ffffff;
+    color: #000000;
+
+    /* Smooth text rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Prevent font resizing in some browsers */
+    -webkit-text-size-adjust: 100%;
 }
+
+/* Dark theme support using prefers-color-scheme */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000000;
+        color: #ffffff;
+    }
+}
+
+/* Responsive typography scaling */
+@media (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+
+
 header{
     background-color: #007bff;
     min-height: 60px;
