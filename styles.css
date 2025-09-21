@@ -14,9 +14,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap');
 
 body {
-    /* Reset margin and padding */
-    margin: 0;
-    padding: 0;
+    
 
     /* Font settings */
     font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
@@ -99,7 +97,7 @@ input{
     padding: 7px;
     border: solid 1px;
     border-radius: 5px;
-    border: 0;
+    border: solid 1px black;
 }
 input:hover{
     border: solid 1px white;
